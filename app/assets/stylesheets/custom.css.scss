@@ -1,0 +1,107 @@
+
+/********** Style Header ********/
+
+
+#mainContainer {
+	height: 100%;
+	width: 100%px;
+	border: 1px solid white;
+	position: relative;
+}
+
+#jumbotron {
+	width: 600px;
+	height: 100px;
+	border: 1px solid white;
+	margin: 0 auto;
+	margin-bottom: -40px;
+	padding-top: 100px;
+	text-decoration: none;
+
+	
+	p {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 64px;
+	}
+}
+
+#tagLine {
+	font-size: 20px;
+	line-height: 26px;
+	color: #6e6e6e;
+	font-weight: 300;
+	max-width: 450px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+	margin-top: 5px;
+	padding-left: 250px;
+	padding-right: 10px;
+}
+
+/********** Style Articles ********/
+
+#articleContainer {
+	margin-top: 100px;
+	border: 1px solid white;
+	position: relative;
+}
+
+#titleDiv {
+	border: 1px solid white;
+	height: 50px;
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+
+	p {
+	font-size: 30px;
+	text-align: left;
+	margin: 0 auto;
+	}
+}
+
+#articleDiv {
+	border: 1px solid white;
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: left;
+
+	p {
+	-webkit-font-smoothing: antialiased;
+	}
+}
+
+#user_nav {
+	height: 50px;
+	width: 400px;
+	border: 1px solid white;
+	display: inline;
+
+	div{
+	display: inline;
+	}
+
+
+
+/*############### parallax ###################*/
+
+#home {
+  background: image-url('https://s-media-cache-ak0.pinimg.com/736x/04/7f/8d/047f8da3fd4f8f31bd332dd8e87eac03.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  minimum-height: 768px;
+  width: 100%;
+  display: block;
+
+		.dots {
+		  background-image:url('');
+		  position:absolute;  
+		  width:100%;
+		  height:768px;
+		  z-index:25;
+		}
+	}
+}
+

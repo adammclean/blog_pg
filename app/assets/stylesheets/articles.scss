@@ -1,0 +1,58 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.freightHeavy {
+	font-family: 'freight-sans-pro', 'Helvetica', 'Avenir', 'Arial', sans-serif;
+	color: #FF0042;
+	font-weight: 900
+}
+
+.freight {
+	font-family: 'freight-sans-pro', 'Helvetica', 'Avenir', 'Arial', sans-serif;
+	font-size: 40px;
+	color: #000;
+	font-size: 43px;
+	line-height: 44px;
+}
+
+.proxima {
+	font-family: 'proxima-nova', 'Helvetica', 'Avenir', 'Arial', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	color: #4D4D4D;
+}
+
+.btn {
+	font-family: proxima-nova;
+  display: inline-block;
+	border: 1px solid #e4e4e4;
+	padding: 4px 18px 4px 18px;
+	border-radius: 30px;
+	line-height: 20px;
+	color: #8c8c8c;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: white;
+	transition-property: all;
+	transition-duration: 0.2s;
+  margin-top: 45px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn:hover {
+  background-color: #EFEFEF;
+  .link {
+  text-decoration: none;
+  }
+}
+
+#crudLinks .a {
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	display: inline;
+	
+}
