@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.min.js"></script>
-  
-  <title>Auth</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div id="user_nav" class = "proxima">
-	<% if current_user  %>
-	Logged in as <%= current_user.email %>.
-	<%= link_to "Log out", log_out_path %>
-	<% else  %>
-	<%= link_to "Sign up", sign_up_path %> or
-	<%= link_to "Log in", log_in_path %>
-	<%= link_to 'New article', new_article_path %> <br />
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-	<% end %>
-</div>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-<%= flash.each do |name, msg| %>
-	<%= content_tag :div, msg, :id => "flash_#{name}" %>
-<% end %>
-<%= yield %>
-</body>
+  <body>
+
+    <%= yield %>
+
+  </body>
 </html>
